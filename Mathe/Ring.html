@@ -18,7 +18,7 @@
   </title>
   
     
-      <meta property='og:description' content='Gegeben sei eine Menge math' />
+      <meta property='og:description' content='Gegeben sei eine Menge \mathcal{R} (zum Beispiel die Menge \mathbb{Z} der ganzen Zahlen). In \mathcal{R} soll es zwei besondere Elemente geben, die wir 0 und 1 nennen, also 0,1\in\mathcal{R}. Weiter soll es auf \mathcal{R} zwei Verknüpfungen + und \cdot geben, die zwei beliebigen Elementen x,y\in\mathcal{R} jeweils neue Elemente x+y\in\mathcal{R} und x\cdot y\in\mathcal{R} zuordnen. Wir nennen (\mathcal{R},+,\cdot,0,1) einen (kommutativen) Ring, wenn für alle x,y,z\in\mathcal{R} folgende Rechenregeln gelten.' />
       <meta property='og:site_name' content='Pauls Zettelkasten' />
       <meta property='og:image' content />
       <meta property='og:type' content='website' />
@@ -31,11 +31,21 @@
       <base href='/' />
       <link href='favicon.svg' rel='icon' />
     
-    <meta name='generator' content='Emanote' />
+    <script>
+  window.MathJax = {
+    startup: {
+      ready: () => {
+        MathJax.startup.defaultReady();
+      }
+    }
+  };
+</script>
+<script async id='MathJax-script' src='https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js'></script>
+
 
   
   
-  <link href='tailwind.css?instanceId=29f2dd0a-677d-4143-b54f-124086da88e1' rel='stylesheet' type='text/css' />
+  <link href='tailwind.css?instanceId=db4a9488-9567-400d-9b6b-d41e56f881cd' rel='stylesheet' type='text/css' />
 
   <style>
     /* Heist error element */
@@ -636,7 +646,27 @@
 
 
     <p class='mb-3'>
-      Gegeben sei eine Menge <span class='math display'>$$math$$</span>
+      Gegeben sei eine Menge <span class='math inline'>\(\mathcal{R}\)</span> (zum Beispiel die Menge <span class='math inline'>\(\mathbb{Z}\)</span> der ganzen Zahlen). In <span class='math inline'>\(\mathcal{R}\)</span> soll es zwei besondere Elemente geben, die wir <span class='math inline'>\(0\)</span> und <span class='math inline'>\(1\)</span> nennen, also <span class='math inline'>\(0,1\in\mathcal{R}\)</span>. Weiter soll es auf <span class='math inline'>\(\mathcal{R}\)</span> zwei Verknüpfungen <span class='math inline'>\(+\)</span> und <span class='math inline'>\(\cdot\)</span> geben, die zwei beliebigen Elementen <span class='math inline'>\(x,y\in\mathcal{R}\)</span> jeweils neue Elemente <span class='math inline'>\(x+y\in\mathcal{R}\)</span> und <span class='math inline'>\(x\cdot y\in\mathcal{R}\)</span> zuordnen. Wir nennen <span class='math inline'>\((\mathcal{R},+,\cdot,0,1)\)</span> einen (kommutativen) Ring, wenn für alle <span class='math inline'>\(x,y,z\in\mathcal{R}\)</span> folgende Rechenregeln gelten.
+    </p>
+  
+    <p class='mb-3'>
+      (<span class='math inline'>\(K_+\)</span>) <span class='math inline'>\(x+y=y+x\)</span>
+    </p>
+  
+    <p class='mb-3'>
+      (<span class='math inline'>\(K_\cdot\)</span>) <span class='math inline'>\(x\cdot y = y\cdot x\)</span>
+    </p>
+  
+    <p class='mb-3'>
+      (<span class='math inline'>\(A_+\)</span>) <span class='math inline'>\((x+y)+z = x+(y+z)\)</span>
+    </p>
+  
+    <p class='mb-3'>
+      (<span class='math inline'>\(A_\cdot\)</span>) <span class='math inline'>\((x\cdot y) \cdot z = x \cdot (y\cdot z)\)</span>
+    </p>
+  
+    <p class='mb-3'>
+      Die Klammern geben die Reihenfolge der Ausführung der Veknüpfung an.
     </p>
   
   <div class='flex items-center justify-center mt-2'>
