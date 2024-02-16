@@ -1,0 +1,1 @@
+Gegeben sei eine Menge $$math$$
