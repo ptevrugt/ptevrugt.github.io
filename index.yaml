@@ -3,6 +3,8 @@
 
 page:
   siteTitle: Pauls Zettelkasten
+  headHtml: |
+    <snippet var="js.mathjax" />
 
 template:
   theme: red
