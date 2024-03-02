@@ -45,7 +45,7 @@
 
   
   
-  <link href='tailwind.css?instanceId=11105da0-7f7a-4ff6-aa3e-68c0d18d1491' rel='stylesheet' type='text/css' />
+  <link href='tailwind.css?instanceId=5d442c3a-9bfd-482f-95fd-b578b8ba4f22' rel='stylesheet' type='text/css' />
 
   <style>
     /* Heist error element */
@@ -757,7 +757,7 @@
   
     <h3 id='satz-153' class='group mt-6 mb-4 font-bold text-gray-700 text-3xl'>
       
-  Satz 15.3
+  Satz 15.3.
   
   <a href='Mathe/Vorlesungen/Stochastik.html#satz-153'>
     <span class='hover:text-red-400 group-hover:visible invisible cursor-pointer text-sm align-middle' aria-label='Copy link'><svg class='inline w-4' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'>
@@ -826,7 +826,7 @@
     </p>
   
     <p class='mb-3'>
-      Verteilungsfunktion: <span class='math inline'>\(F_X(t) = \frac{1}{\pi} \int_{-\infty}^t \frac{1}{1+s²}ds = \frac{1}{\pi}\left. \arctan s\right|_{s=-\infty}^{s=t} = \frac{1}{\pi} [\arctan t - (-\frac{\pi}{2}] = \frac{1}{2} + \frac{1}{\pi}\arctan t\)</span><br /><span class='math inline'>\(F_X(+\infty) = \frac{1}{2}+\frac{1}{\pi}\arctan(+\infty) = \frac{1}{2} + \frac{1}{\pi}\cdot\frac{\pi}{2} = 1\)</span>
+      Verteilungsfunktion: <span class='math inline'>\(F_X(t) = \frac{1}{\pi} \int_{-\infty}^t \frac{1}{1+s²}ds = \frac{1}{\pi}\left. \arctan s\right|_{s=-\infty}^{s=t} = \frac{1}{\pi} [\arctan t - (-\frac{\pi}{2})] = \frac{1}{2} + \frac{1}{\pi}\arctan t\)</span><br /><span class='math inline'>\(F_X(+\infty) = \frac{1}{2}+\frac{1}{\pi}\arctan(+\infty) = \frac{1}{2} + \frac{1}{\pi}\cdot\frac{\pi}{2} = 1\)</span>
     </p>
   
     <p class='mb-3'>
@@ -849,7 +849,7 @@
   
     <h3 id='satz-161-radon-nikodym-absolut-stetige-verteilungen' class='group mt-6 mb-4 font-bold text-gray-700 text-3xl'>
       
-  Satz 16.1 (Radon-Nikodym, absolut stetige Verteilungen)
+  Satz 16.1. (Radon-Nikodym, absolut stetige Verteilungen)
   
   <a href='Mathe/Vorlesungen/Stochastik.html#satz-161-radon-nikodym-absolut-stetige-verteilungen'>
     <span class='hover:text-red-400 group-hover:visible invisible cursor-pointer text-sm align-middle' aria-label='Copy link'><svg class='inline w-4' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'>
@@ -924,8 +924,186 @@
     </p>
   
     <p class='mb-3'>
-      C ist Lebesgue-Nullmenge.<br />C ist überabzählbar.
+      <span class='math inline'>\(C\)</span> ist Lebesgue-Nullmenge.<br /><span class='math inline'>\(C\)</span> ist überabzählbar. <span class='math inline'>\(C \leftrightarrow_\text{bij.} \{0,2\}^\infty \leftrightarrow_\text{bij.} \{0,1\}^\infty \leftrightarrow_\text{bij.} [0,1]\)</span><br /><span class='math inline'>\(C\)</span> abgeschlossen als Schnitt von abgeschlossenen Mengen
     </p>
+  
+    <h4 id='cantor-funktion' class='group mt-6 mb-4 font-bold text-gray-700 text-2xl'>
+      
+  Cantor-Funktion
+  
+  <a href='Mathe/Vorlesungen/Stochastik.html#cantor-funktion'>
+    <span class='hover:text-red-400 group-hover:visible invisible cursor-pointer text-sm align-middle' aria-label='Copy link'><svg class='inline w-4' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'>
+        <path d='M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71'></path>
+        <path d='M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71'></path>
+      </svg></span>
+  </a>
+
+
+    </h4>
+  
+    <ul class='my-3 ml-6 space-y-1 list-decimal list-inside'>
+      
+        <li>
+          F(t) ist stetig und monoton steigend
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\forall t\in[0,1]\setminus C \exists F'(t) = 0\)</span>
+        </li>
+      
+    </ul>
+  
+    <p class='mb-3'>
+      Also ist <span class='math inline'>\(F'(t)=0\)</span> fast überall und <span class='math inline'>\(\int_0^1 F'(t) dt = 0\)</span>, aber <span class='math inline'>\(F(1) = 1, F(0)= 0\)</span><br />Für <span class='math inline'>\(F(t)\)</span> gilt <span class='math inline'>\(F(1)-F(0) \neq \int_0^1 F'(t)dt = 0\)</span>.
+    </p>
+  
+    <h3 id='defintion-cantor-verteilung' class='group mt-6 mb-4 font-bold text-gray-700 text-3xl'>
+      
+  Defintion: Cantor-Verteilung
+  
+  <a href='Mathe/Vorlesungen/Stochastik.html#defintion-cantor-verteilung'>
+    <span class='hover:text-red-400 group-hover:visible invisible cursor-pointer text-sm align-middle' aria-label='Copy link'><svg class='inline w-4' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'>
+        <path d='M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71'></path>
+        <path d='M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71'></path>
+      </svg></span>
+  </a>
+
+
+    </h3>
+  
+    <p class='mb-3'>
+      Zufallsvariable <span class='math inline'>\(X\)</span> mit Verteilungsfunktion <span class='math inline'>\(F\)</span> <a href='Mathe/Vorlesungen/Stochastik.html#cantor-funktion' class='text-red-600 mavenLinkBold hover:underline'>Cantor-Funktion</a> heißt <strong>Cantor-verteilt</strong>.
+    </p>
+  
+    <h3 id='satz-162-zerlegungssatz-von-lebesgue' class='group mt-6 mb-4 font-bold text-gray-700 text-3xl'>
+      
+  Satz 16.2. (Zerlegungssatz von Lebesgue)
+  
+  <a href='Mathe/Vorlesungen/Stochastik.html#satz-162-zerlegungssatz-von-lebesgue'>
+    <span class='hover:text-red-400 group-hover:visible invisible cursor-pointer text-sm align-middle' aria-label='Copy link'><svg class='inline w-4' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'>
+        <path d='M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71'></path>
+        <path d='M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71'></path>
+      </svg></span>
+  </a>
+
+
+    </h3>
+  
+    <p class='mb-3'>
+      Sei <span class='math inline'>\(F\)</span> Verteilungsfunktion des Wahrscheinlichkeitsmaßes <span class='math inline'>\(\mu\)</span> auf <span class='math inline'>\(\mathbb R\)</span>. Dann <span class='math inline'>\(\exists p_1,p_2,p_3\in[0,1]\)</span> mit <span class='math inline'>\(p_1+p_2+p_3=1\)</span> und Verteilungsfunktionen <span class='math inline'>\(F_1,F_2,F_3\)</span> s.d. <span class='math inline'>\(F(t) = p_1F_1(t) + p_2F_2(t)+p_3F_3(t)\)</span> bzw. <span class='math inline'>\(\mu = p_1\mu_1+p_2\mu_2+p_3\mu_3\)</span> und <span class='math inline'>\(\mu_1\)</span> diskret, <span class='math inline'>\(\mu_2\)</span> absolut stetig, <span class='math inline'>\(\mu_3\)</span> singulär.
+    </p>
+  
+    <h2 id='17-zufallsvektoren-und-faltungsformeln' class='group mt-6 mb-4 font-bold text-gray-700 text-4xl border-b-2'>
+      
+  17. Zufallsvektoren und Faltungsformeln
+  
+  <a href='Mathe/Vorlesungen/Stochastik.html#17-zufallsvektoren-und-faltungsformeln'>
+    <span class='hover:text-red-400 group-hover:visible invisible cursor-pointer text-sm align-middle' aria-label='Copy link'><svg class='inline w-4' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'>
+        <path d='M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71'></path>
+        <path d='M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71'></path>
+      </svg></span>
+  </a>
+
+
+    </h2>
+  
+    <h3 id='definition-zufallsvektor' class='group mt-6 mb-4 font-bold text-gray-700 text-3xl'>
+      
+  Definition: Zufallsvektor
+  
+  <a href='Mathe/Vorlesungen/Stochastik.html#definition-zufallsvektor'>
+    <span class='hover:text-red-400 group-hover:visible invisible cursor-pointer text-sm align-middle' aria-label='Copy link'><svg class='inline w-4' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'>
+        <path d='M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71'></path>
+        <path d='M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71'></path>
+      </svg></span>
+  </a>
+
+
+    </h3>
+  
+    <p class='mb-3'>
+      Seien <span class='math inline'>\(X_1, ..., X_d: \Omega \rightarrow \mathbb R\)</span> Zufallsvariablen. Die Abbildung <span class='math inline'>\(X: \Omega \rightarrow \mathbb R^d, \omega \mapsto (X_1(\omega), ..., X_d(\omega))\)</span> heißt Zufallsvektor. (<span class='math inline'>\(X=(X_1,...,X_d)\)</span>)
+    </p>
+  
+    <h4 id='begriffe' class='group mt-6 mb-4 font-bold text-gray-700 text-2xl'>
+      
+  Begriffe
+  
+  <a href='Mathe/Vorlesungen/Stochastik.html#begriffe'>
+    <span class='hover:text-red-400 group-hover:visible invisible cursor-pointer text-sm align-middle' aria-label='Copy link'><svg class='inline w-4' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'>
+        <path d='M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71'></path>
+        <path d='M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71'></path>
+      </svg></span>
+  </a>
+
+
+    </h4>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          Die gemeinsame Verteilung von <span class='math inline'>\(X\)</span> ist Wahrscheinlichkeitsmaß <span class='math inline'>\(P_X\)</span> auf <span class='math inline'>\(\mathbb R^d\)</span> mit <span class='math inline'>\(P_X(B) = \mathbb P[x\in B]\)</span>
+        </li>
+      
+        <li>
+          Diskret, abs. stetig, singulär wie für Zufallsvariablen definiert.
+        </li>
+      
+        <li>
+          Randverteilungen: Verteilungen von <span class='math inline'>\(X_1, ..., X_d\)</span>: <span class='math inline'>\(P_{X_1},...,P_{X_d}\)</span>
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          Falls <span class='math inline'>\(X\)</span> diskret: <span class='math inline'>\(P_{X_1}(y_1) = \sum_{y_2,...,y_d\in\mathbb R}P_{X_1,...,X_d}(y_1,...,y_d)\)</span>
+        </li>
+      
+        <li>
+          Falls <span class='math inline'>\(X\)</span> abs. stetig mit Dichte <span class='math inline'>\(f(x_1,...,x_d)\)</span>: <span class='math inline'>\(f_{X_1}(y_1) = \int_\mathbb{R}...\int_\mathbb{R}f_X(y_1,...,y_d)dy_2...dy_d\)</span>
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          Falls <span class='math inline'>\(X_1,...,X_d\)</span> unabhängig mit Zähldichten <span class='math inline'>\(P_{X_1}(y_1),...,P_{X_d}(y_d)\)</span>: <span class='math inline'>\(P_X(y_1,...,y_d) = \mathbb P[X_1=y_1,...,X_d=y_d] = P_{X_1}(y_1)\cdot ... \cdot P_{X_d}(y_d)\)</span>
+        </li>
+      
+        <li>
+          Falls <span class='math inline'>\(X_1,...,X_d\)</span> unabhängig mit Dichten <span class='math inline'>\(f_{X_1}(y_1),...,f_{X_d}(y_d)\)</span>: <span class='math inline'>\(f_X(y_1,...,y_d) = f_{X_1}(y_1)\cdot ... \cdot f_{X_d}(y_d)\)</span>
+        </li>
+      
+    </ul>
+  
+    <h3 id='faltungsformeln' class='group mt-6 mb-4 font-bold text-gray-700 text-3xl'>
+      
+  Faltungsformeln
+  
+  <a href='Mathe/Vorlesungen/Stochastik.html#faltungsformeln'>
+    <span class='hover:text-red-400 group-hover:visible invisible cursor-pointer text-sm align-middle' aria-label='Copy link'><svg class='inline w-4' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'>
+        <path d='M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71'></path>
+        <path d='M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71'></path>
+      </svg></span>
+  </a>
+
+
+    </h3>
+  
+    <p class='mb-3'>
+      Seien <span class='math inline'>\(X_1, X_2\)</span> unabhängige Zufallsvariablen mit bekannten Verteilungen.<br />Frage: Bestimme Verteilung von <span class='math inline'>\(X_1+X_2\)</span> oder <span class='math inline'>\(X_1\cdot X_2\)</span> oder <span class='math inline'>\(\frac{X_1}{X_2}\)</span>.
+    </p>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          Falls <span class='math inline'>\(X_1, X_2\)</span> diskret: <span class='math inline'>\(P_{X_1+X_2}(z) = \mathbb P[X_1+X_2 = z] = \sum_{y\in\text{Im}{X_1}}P_{X_1}(y)\cdot P_{X_2}(z-y)\)</span>.
+        </li>
+      
+        <li>
+          Falls <span class='math inline'>\(X_1, X_2\)</span> absolut stetig: <span class='math inline'>\(f_{X_1+X_2}(z)=\int_\mathbb{R} f_{X_1}(y)\cdot f_{X_2}(z-y)dy\)</span>.
+        </li>
+      
+    </ul>
   
   <div class='flex items-center justify-center mt-2'>
   
@@ -955,6 +1133,10 @@
   
     <div class='pl-2 mt-2 border-l-2 border-red-200 hover:border-red-500'>
       <div><p>Sei <span class='math inline'>\(X\)</span> <a href='Mathe/Vorlesungen/Stochastik.html#definition-standardnormalverteilung' class='text-gray-600 font-bold hover:bg-gray-50'>standardnormalverteilt</a>. Dann:<br /><span class='math inline'>\(\mathbb{E}X =0\)</span><br /><span class='math inline'>\(\text{Var}X = \mathbb{E}X²=1\)</span></p></div>
+    </div>
+  
+    <div class='pl-2 mt-2 border-l-2 border-red-200 hover:border-red-500'>
+      <div><p>Zufallsvariable <span class='math inline'>\(X\)</span> mit Verteilungsfunktion <span class='math inline'>\(F\)</span> <a href='Mathe/Vorlesungen/Stochastik.html#cantor-funktion' class='text-gray-600 font-bold hover:bg-gray-50'>Cantor-Funktion</a> heißt <strong>Cantor-verteilt</strong>.</p></div>
     </div>
   
 </div>
