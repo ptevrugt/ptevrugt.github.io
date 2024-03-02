@@ -4,7 +4,7 @@
 Zufallsvariable $X$ heißt **standardnormalverteilt**, wenn $f_X(t) = \frac{1}{\sqrt{2\pi}}e^{-\frac{t²}{2}}$, $t\in\mathbb{R}$.
 Warum $\sqrt{2\pi}$? Damit $\int_\mathbb{R}f_X(t)dt=1$.
 
-### Satz 15.3
+### Satz 15.3.
 Sei $X$ [standardnormalverteilt](Stochastik.md#definition-standardnormalverteilung). Dann:  
 $\mathbb{E}X =0$  
 $\text{Var}X = \mathbb{E}X²=1$
@@ -24,7 +24,7 @@ Dichte von $Y\sim\text{N}(\mu,\sigma²)$: $f_Y(t) = \frac{\text{d}}{\text{d}t}F_
 ### Definition: Cauchy-Verteilung
 Zufallsvariable $X$ heißt **Cauchy-verteilt**, wenn $f_X(t)=\frac{1}{\pi}\cdot \frac{1}{1+t²}$, $t\in\mathbb{R}$.
 
-Verteilungsfunktion: $F_X(t) = \frac{1}{\pi} \int_{-\infty}^t \frac{1}{1+s²}ds = \frac{1}{\pi}\left. \arctan s\right|_{s=-\infty}^{s=t} = \frac{1}{\pi} [\arctan t - (-\frac{\pi}{2}] = \frac{1}{2} + \frac{1}{\pi}\arctan t$  
+Verteilungsfunktion: $F_X(t) = \frac{1}{\pi} \int_{-\infty}^t \frac{1}{1+s²}ds = \frac{1}{\pi}\left. \arctan s\right|_{s=-\infty}^{s=t} = \frac{1}{\pi} [\arctan t - (-\frac{\pi}{2})] = \frac{1}{2} + \frac{1}{\pi}\arctan t$  
 $F_X(+\infty) = \frac{1}{2}+\frac{1}{\pi}\arctan(+\infty) = \frac{1}{2} + \frac{1}{\pi}\cdot\frac{\pi}{2} = 1$
 
 **Bem.:** $\mathbb{E}X = \int_{-\infty}^{\infty} t \frac{1}{\pi(1+t²)}dt = \infty - \infty$  
@@ -32,7 +32,7 @@ $\mathbb{E}X$ existiert nicht! $\frac{1}{\pi}\int_0^\infty \frac{t}{1+t²}dt = \
 
 ## 16. Singuläre Verteilungen
 
-### Satz 16.1 (Radon-Nikodym, absolut stetige Verteilungen)
+### Satz 16.1. (Radon-Nikodym, absolut stetige Verteilungen)
 Für ein Wahrscheinlichkeitsmaß $\mu$ auf $\mathbb R$ sind folgende Bedingungen äquivalent:
 
 1. $\forall A \in \mathcal B(\mathbb R)$ mit $\lambda(A) = 0 \implies \mu(A) = 0$
@@ -56,5 +56,40 @@ Cantor-Menge $C=\{x\in[0,1]: x=\sum_{n=1}^\infty \frac{\epsilon_n}{3^n}\text{ mi
 $C = \bigcap_{n=1}^\infty C_n$ mit $\lambda(C_n)=(\frac{2}{3})^n$  
 $\lambda(C)\leq\lambda(C_n)=(\frac{2}{3})^n$ mit $n\rightarrow\infty: \lambda(C)=0$.
 
-C ist Lebesgue-Nullmenge.  
-C ist überabzählbar.
+$C$ ist Lebesgue-Nullmenge.  
+$C$ ist überabzählbar. $C \leftrightarrow_\text{bij.} \{0,2\}^\infty \leftrightarrow_\text{bij.} \{0,1\}^\infty \leftrightarrow_\text{bij.} [0,1]$  
+$C$ abgeschlossen als Schnitt von abgeschlossenen Mengen
+
+#### Cantor-Funktion
+
+1. F(t) ist stetig und monoton steigend
+2. $\forall t\in[0,1]\setminus C \exists F'(t) = 0$
+
+Also ist $F'(t)=0$ fast überall und $\int_0^1 F'(t) dt = 0$, aber $F(1) = 1, F(0)= 0$  
+Für $F(t)$ gilt $F(1)-F(0) \neq \int_0^1 F'(t)dt = 0$.
+
+### Defintion: Cantor-Verteilung
+Zufallsvariable $X$ mit Verteilungsfunktion $F$ [Cantor-Funktion](Stochastik.md#cantor-funktion) heißt **Cantor-verteilt**.
+
+### Satz 16.2. (Zerlegungssatz von Lebesgue)
+Sei $F$ Verteilungsfunktion des Wahrscheinlichkeitsmaßes $\mu$ auf $\mathbb R$. Dann $\exists p_1,p_2,p_3\in[0,1]$ mit $p_1+p_2+p_3=1$ und Verteilungsfunktionen $F_1,F_2,F_3$ s.d. $F(t) = p_1F_1(t) + p_2F_2(t)+p_3F_3(t)$ bzw. $\mu = p_1\mu_1+p_2\mu_2+p_3\mu_3$ und $\mu_1$ diskret, $\mu_2$ absolut stetig, $\mu_3$ singulär.
+
+## 17. Zufallsvektoren und Faltungsformeln
+
+### Definition: Zufallsvektor
+Seien $X_1, ..., X_d: \Omega \rightarrow \mathbb R$ Zufallsvariablen. Die Abbildung $X: \Omega \rightarrow \mathbb R^d, \omega \mapsto (X_1(\omega), ..., X_d(\omega))$ heißt Zufallsvektor. ($X=(X_1,...,X_d)$)
+
+#### Begriffe
+- Die gemeinsame Verteilung von $X$ ist Wahrscheinlichkeitsmaß $P_X$ auf $\mathbb R^d$ mit $P_X(B) = \mathbb P[x\in B]$
+- Diskret, abs. stetig, singulär wie für Zufallsvariablen definiert. 
+- Randverteilungen: Verteilungen von $X_1, ..., X_d$: $P_{X_1},...,P_{X_d}$
+    - Falls $X$ diskret: $P_{X_1}(y_1) = \sum_{y_2,...,y_d\in\mathbb R}P_{X_1,...,X_d}(y_1,...,y_d)$
+  - Falls $X$ abs. stetig mit Dichte $f(x_1,...,x_d)$: $f_{X_1}(y_1) = \int_\mathbb{R}...\int_\mathbb{R}f_X(y_1,...,y_d)dy_2...dy_d$
+- Falls $X_1,...,X_d$ unabhängig mit Zähldichten $P_{X_1}(y_1),...,P_{X_d}(y_d)$: $P_X(y_1,...,y_d) = \mathbb P[X_1=y_1,...,X_d=y_d] = P_{X_1}(y_1)\cdot ... \cdot P_{X_d}(y_d)$
+- Falls $X_1,...,X_d$ unabhängig mit Dichten $f_{X_1}(y_1),...,f_{X_d}(y_d)$: $f_X(y_1,...,y_d) = f_{X_1}(y_1)\cdot ... \cdot f_{X_d}(y_d)$
+
+### Faltungsformeln
+Seien $X_1, X_2$ unabhängige Zufallsvariablen mit bekannten Verteilungen.  
+Frage: Bestimme Verteilung von $X_1+X_2$ oder $X_1\cdot X_2$ oder $\frac{X_1}{X_2}$.  
+- Falls $X_1, X_2$ diskret: $P_{X_1+X_2}(z) = \mathbb P[X_1+X_2 = z] = \sum_{y\in\text{Im}{X_1}}P_{X_1}(y)\cdot P_{X_2}(z-y)$.
+- Falls $X_1, X_2$ absolut stetig: $f_{X_1+X_2}(z)=\int_\mathbb{R} f_{X_1}(y)\cdot f_{X_2}(z-y)dy$.
