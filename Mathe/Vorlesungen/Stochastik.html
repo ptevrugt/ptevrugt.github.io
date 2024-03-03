@@ -45,7 +45,7 @@
 
   
   
-  <link href='tailwind.css?instanceId=bb80915a-37cc-46d8-84a1-ba61700c3d2d' rel='stylesheet' type='text/css' />
+  <link href='tailwind.css?instanceId=d527f48c-d698-4bf0-a3f3-98db2ce6b2cf' rel='stylesheet' type='text/css' />
 
   <style>
     /* Heist error element */
@@ -1302,6 +1302,104 @@
     <p class='mb-3'>
       Seien <span class='math inline'>\(X_1,X_2,X_3,\dots\)</span> unabhängige (oder unkorreliert) Zufallsvariablen mit <span class='math inline'>\(\mathbb EX_i=\mu\)</span> und <span class='math inline'>\(\text{Var}X_i=\sigma²\)</span> <span class='math inline'>\(\forall i=1,2,\dots\)</span>. Dann gilt <span class='math inline'>\(\frac{X_1+\dots+X_n}{n}\longrightarrow^{P,L^2}_{n\rightarrow\infty}\mathbb EX_1\)</span>.
     </p>
+  
+    <h3 id='satz-186-weierstraß-1885' class='group mt-6 mb-4 font-bold text-gray-700 text-3xl'>
+      
+  Satz 18.6. (Weierstraß, 1885)
+  
+  <a href='Mathe/Vorlesungen/Stochastik.html#satz-186-weierstraß-1885'>
+    <span class='hover:text-red-400 group-hover:visible invisible cursor-pointer text-sm align-middle' aria-label='Copy link'><svg class='inline w-4' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'>
+        <path d='M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71'></path>
+        <path d='M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71'></path>
+      </svg></span>
+  </a>
+
+
+    </h3>
+  
+    <p class='mb-3'>
+      Sei <span class='math inline'>\(f:[0,1]\rightarrow \mathbb R\)</span> stetige Funktion. Dann gilt <span class='math inline'>\(\forall \epsilon&gt;0 \exists\text{Polynom }P \text{ s.d. } \sup_{x\in[0,1]}|f(x)-P(x)|\leq\epsilon\)</span>.
+    </p>
+  
+    <h2 id='19-lemma-von-borel-cantelli' class='group mt-6 mb-4 font-bold text-gray-700 text-4xl border-b-2'>
+      
+  19. Lemma von Borel-Cantelli
+  
+  <a href='Mathe/Vorlesungen/Stochastik.html#19-lemma-von-borel-cantelli'>
+    <span class='hover:text-red-400 group-hover:visible invisible cursor-pointer text-sm align-middle' aria-label='Copy link'><svg class='inline w-4' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'>
+        <path d='M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71'></path>
+        <path d='M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71'></path>
+      </svg></span>
+  </a>
+
+
+    </h2>
+  
+    <p class='mb-3'>
+      Seien <span class='math inline'>\(A_1,A_2,\dots\)</span> Ereignisse.
+    </p>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\(\limsup A_n =^\text{def}\{\omega\in\Omega:\omega\in A_i \text{ für unendlich viele }i\}=\bigcap_{k=1}^\infty\bigcup_{i=k}^\infty A_i\in\mathcal F\)</span>
+        </li>
+      
+        <li>
+          <span class='math inline'>\(\liminf A_n =^\text{def}\{\omega\in\Omega:\omega\in A_i \text{ für alle }i\text{ bis auf endlich viele}\} = \bigcup_{k=1}^\infty\bigcap_{i=k}^\infty A_i\)</span>
+        </li>
+      
+    </ul>
+  
+    <p class='mb-3'>
+      <strong>Bem.:</strong>
+    </p>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <span class='math inline'>\(\liminf A_n\sub\limsup A_n\)</span>
+        </li>
+      
+        <li>
+          <span class='math inline'>\((\liminf A_n)^\complement=(\bigcup_{k=1}^\infty\bigcap_{i=k}^\infty A_i)^\complement=\bigcap_{k=1}^\infty\bigcup_{i=k}^\infty A_i^\complement=\limsup(A_n^\complement)\)</span>
+        </li>
+      
+        <li>
+          <span class='math inline'>\((\limsup A_n)^\complement=\liminf(A_n^\complement)\)</span>
+        </li>
+      
+    </ul>
+  
+    <h3 id='lemma-191-borel-cantelli' class='group mt-6 mb-4 font-bold text-gray-700 text-3xl'>
+      
+  Lemma 19.1. (Borel-Cantelli)
+  
+  <a href='Mathe/Vorlesungen/Stochastik.html#lemma-191-borel-cantelli'>
+    <span class='hover:text-red-400 group-hover:visible invisible cursor-pointer text-sm align-middle' aria-label='Copy link'><svg class='inline w-4' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'>
+        <path d='M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71'></path>
+        <path d='M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71'></path>
+      </svg></span>
+  </a>
+
+
+    </h3>
+  
+    <p class='mb-3'>
+      Sei <span class='math inline'>\((\Omega,\mathcal F,\mathbb P)\)</span> Wahrscheinlichkeitsraum und <span class='math inline'>\(A_1,A_2,\dots\in\mathcal F\)</span> Ereignisse.
+    </p>
+  
+    <ul class='my-3 ml-6 space-y-1 list-decimal list-inside'>
+      
+        <li>
+          Aus <span class='math inline'>\(\sum_{n=1}^\infty\mathbb P[A_n]&lt;\infty\)</span> folgt <span class='math inline'>\(\mathbb P[\limsup A_n] = 0\)</span>, d.h. <span class='math inline'>\(\mathbb P[\text{es treten nur endlich viele Ereignisse ein}]=1\)</span>
+        </li>
+      
+        <li>
+          Sind <span class='math inline'>\(A_1,A_2,\dots\)</span> unabhängig mit <span class='math inline'>\(\sum_{n=1}^\infty\mathbb P[A_n]=\infty\)</span>, dann gilt <span class='math inline'>\(\mathbb P[\limsup A_n]=1\)</span>, d.h. <span class='math inline'>\(\mathbb P[\text{es treten unendlich viele Ereignisse ein}]=1\)</span>
+        </li>
+      
+    </ul>
   
   <div class='flex items-center justify-center mt-2'>
   
