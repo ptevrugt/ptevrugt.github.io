@@ -93,3 +93,43 @@ Seien $X_1, X_2$ unabhängige Zufallsvariablen mit bekannten Verteilungen.
 Frage: Bestimme Verteilung von $X_1+X_2$ oder $X_1\cdot X_2$ oder $\frac{X_1}{X_2}$.  
 - Falls $X_1, X_2$ diskret: $P_{X_1+X_2}(z) = \mathbb P[X_1+X_2 = z] = \sum_{y\in\text{Im}{X_1}}P_{X_1}(y)\cdot P_{X_2}(z-y)$.
 - Falls $X_1, X_2$ absolut stetig: $f_{X_1+X_2}(z)=\int_\mathbb{R} f_{X_1}(y)\cdot f_{X_2}(z-y)dy$.
+
+### Satz 17.1.
+Seien $X_1\sim\text{N}(\mu_1,\sigma_1²)$ und $X_2\sim \text N(\mu_2,\sigma_2²)$ unabhängig. Dann ist $X_1+X_2\sim\text N(\mu_1+\mu_2,\sigma_1²+\sigma_2²)$.
+
+### Faltungsformel für das Produkt
+Seien $X_1,X_2$ unabhängige Zufallsvariablen mit Dichten $f_{X_1}$ und $f_{X_2}$. Dichte von $X_1\cdot X_2$:  
+$f_{X_1\cdot X_2}(z)=\int_{\mathbb R}f_{X_1}(y)\cdot f_{X_2}(\frac{z}{y})\cdot \frac{1}{|y|}dy$
+
+
+## 18. Gesetze der großen Zahlen
+Allgemein: Zufallsvariablen $X_1,X_2,X_3,\dots$ unabhängig identisch verteilt.  
+Aussage: $\frac{X_1+\dots+X_n}{n}\longrightarrow_{n\rightarrow\infty}\mathbb EX_1$
+
+### Konvergenzarten von Zufallsvariablen
+Seien $Z_1,Z_2,Z_3,\dots$ Zufallsvariablen und $Z$ auch eine Zufallsvariable.
+
+#### Defintion
+Die Folge $Z_1,Z_2,\dots$ konvergiert gegen $Z$ in Wahrscheinlichkeit (oder stochastisch), falls $\forall \epsilon>0: \lim_{n\rightarrow\infty} \mathbb P[|Z_n-Z|>\epsilon]=0$  
+**Bez.:** $Z_n \rightarrow^PZ$
+
+#### Defintion
+Sei $p>0$. Folge $Z_1, Z_2,\dots$ konvergiert gegen $Z$ in $L^p$, wenn: $\lim_{n\rightarrow\infty}\mathbb E[|Z_n-Z|^p] = 0$.
+
+### Lemma 18.1.
+Sei $Z\geq0$ Zufallsvariable. Dann gilt: $\mathbb P[Z\geq a]\leq \frac{\mathbb EZ}{a}$ $\forall a>0$.
+
+### Satz 18.2. (Tschebyschew-Ungleichung)
+Sei $X$ Zufallsvariable mit $\mathbb E[X²]<\infty$. Dann gilt: $\mathbb P[|X-\mathbb EX|\geq a]\leq \frac{\text{Var}(X)}{a²}$.
+
+### Satz 18.3. (Markow-Ungleichung)
+Sei $Z\geq0$ Zufallsvariable und $f:[0,\infty)\rightarrow [0,\infty)$ monoton steigend. Dann gilt: $\mathbb P[Z\geq a] \leq \frac{\mathbb Ef(z)}{f(a)}$.
+
+### Satz 18.4.
+Aus $Z_n\rightarrow^{L^p}_{n\rightarrow\infty}Z$ (für ein $p>0$) folgt $Z_n\rightarrow^P_{n\rightarrow\infty}Z$.  
+**Bem.:** Aus $Z_n\rightarrow^PZ$ folgt nicht, dass $Z_n\rightarrow^{L^P}Z$.  
+$\Omega=[0,1]$, $\mathbb P$ Lebesgue-Maß.  
+Sei $Z=0$, $Z_n=\mathbb 1_{[0,\frac{1}{n}]}\cdot 2^n$
+
+### Satz 18.5. (Schwaches Gesetz der großen Zahlen)
+Seien $X_1,X_2,X_3,\dots$ unabhängige (oder unkorreliert) Zufallsvariablen mit $\mathbb EX_i=\mu$ und $\text{Var}X_i=\sigma²$ $\forall i=1,2,\dots$. Dann gilt $\frac{X_1+\dots+X_n}{n}\longrightarrow^{P,L^2}_{n\rightarrow\infty}\mathbb EX_1$.
