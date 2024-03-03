@@ -133,3 +133,21 @@ Sei $Z=0$, $Z_n=\mathbb 1_{[0,\frac{1}{n}]}\cdot 2^n$
 
 ### Satz 18.5. (Schwaches Gesetz der großen Zahlen)
 Seien $X_1,X_2,X_3,\dots$ unabhängige (oder unkorreliert) Zufallsvariablen mit $\mathbb EX_i=\mu$ und $\text{Var}X_i=\sigma²$ $\forall i=1,2,\dots$. Dann gilt $\frac{X_1+\dots+X_n}{n}\longrightarrow^{P,L^2}_{n\rightarrow\infty}\mathbb EX_1$.
+
+### Satz 18.6. (Weierstraß, 1885)
+Sei $f:[0,1]\rightarrow \mathbb R$ stetige Funktion. Dann gilt $\forall \epsilon>0 \exists\text{Polynom }P \text{ s.d. } \sup_{x\in[0,1]}|f(x)-P(x)|\leq\epsilon$.
+
+## 19. Lemma von Borel-Cantelli
+Seien $A_1,A_2,\dots$ Ereignisse.  
+- $\limsup A_n =^\text{def}\{\omega\in\Omega:\omega\in A_i \text{ für unendlich viele }i\}=\bigcap_{k=1}^\infty\bigcup_{i=k}^\infty A_i\in\mathcal F$
+- $\liminf A_n =^\text{def}\{\omega\in\Omega:\omega\in A_i \text{ für alle }i\text{ bis auf endlich viele}\} = \bigcup_{k=1}^\infty\bigcap_{i=k}^\infty A_i$  
+
+**Bem.:** 
+- $\liminf A_n\sub\limsup A_n$ 
+- $(\liminf A_n)^\complement=(\bigcup_{k=1}^\infty\bigcap_{i=k}^\infty A_i)^\complement=\bigcap_{k=1}^\infty\bigcup_{i=k}^\infty A_i^\complement=\limsup(A_n^\complement)$
+- $(\limsup A_n)^\complement=\liminf(A_n^\complement)$
+
+### Lemma 19.1. (Borel-Cantelli)
+Sei $(\Omega,\mathcal F,\mathbb P)$ Wahrscheinlichkeitsraum und $A_1,A_2,\dots\in\mathcal F$ Ereignisse.  
+(1) Aus $\sum_{n=1}^\infty\mathbb P[A_n]<\infty$ folgt $\mathbb P[\limsup A_n] = 0$, d.h. $\mathbb P[\text{es treten nur endlich viele Ereignisse ein}]=1$  
+(2) Sind $A_1,A_2,\dots$ unabhängig mit $\sum_{n=1}^\infty\mathbb P[A_n]=\infty$, dann gilt $\mathbb P[\limsup A_n]=1$, d.h. $\mathbb P[\text{es treten unendlich viele Ereignisse ein}]=1$
