@@ -151,3 +151,33 @@ Seien $A_1,A_2,\dots$ Ereignisse.
 Sei $(\Omega,\mathcal F,\mathbb P)$ Wahrscheinlichkeitsraum und $A_1,A_2,\dots\in\mathcal F$ Ereignisse.  
 (1) Aus $\sum_{n=1}^\infty\mathbb P[A_n]<\infty$ folgt $\mathbb P[\limsup A_n] = 0$, d.h. $\mathbb P[\text{es treten nur endlich viele Ereignisse ein}]=1$  
 (2) Sind $A_1,A_2,\dots$ unabhängig mit $\sum_{n=1}^\infty\mathbb P[A_n]=\infty$, dann gilt $\mathbb P[\limsup A_n]=1$, d.h. $\mathbb P[\text{es treten unendlich viele Ereignisse ein}]=1$
+
+## 20. Fast sichere Konvergenz
+### Defintion: Nullereignisse und fast sichere Ereignisse
+Sei $(\Omega,\mathcal F,\mathbb P)$ Wahrscheinlichkeitsraum.
+- Ereignis $A\in\mathcal F$ heißt Nullereignis, wenn $\mathbb P[A]=0$.
+- Ereignis $B\in\mathcal F$ heißt sicheres Ereignis, wenn $\mathbb P[B]=1$.
+
+**Bem.:**
+- Sind $A_1,A_2,\dots$ Nullereignisse $\implies A_1 \cup A_2 \cup \dots$ auch Nullereignis
+- Sind $B_1, B_2, \dots$ fast sichere Ereignisse $\implies \bigcup_{n=1}^\infty B_n$ auch fast sicher
+
+### Defintion: Fast sichere Konvergenz
+Seien $Z_1,Z_2,\dots$ und $Z$ Zufallsvarialben auf $(\Omega,\mathcal F, \mathbb P)$. Wir sagen, dass $Z_n$ gegen $Z$ fast sicher konvergiert, wenn: $\mathbb P[\{\omega\in\Omega:\lim_{n\rightarrow\infty}Z_n(\omega)=Z(w)\}]=1$
+
+**Bez.:** $Z_n\rightarrow_{n\rightarrow\infty}^\text{f.s.}Z$  
+**Bem.:** $\{\lim Z_n = Z\}\in Z$
+
+### Satz 20.1.
+Aus $Z_n\rightarrow^\text{f.s.}Z \implies Z_n \rightarrow^P Z$.
+
+## 21. Starkes Gesetz der großen Zahlen
+### Satz 21.1. (starkes GGZ-1, Kolmogorow)
+Seien $X_1,X_2,\dots$ unabhängige Zufallsvariablen auf $(\Omega,\mathcal F,\mathbb P)$ mit: $\sum\frac{\text{Var}X_n}{n^2}<\infty$. Sei $S_n = X_1+\dots+X_n$. Dann gilt: $\frac{S_n-\mathbb ES_n}{n}\rightarrow^\text{f.s.}0$.  
+Spezialfall: Seien $X_1,X_2,\dots$ unabhängig, identisch verteilt, $\mathbb EX_i=\mu$, $\text{Var}X_i=\sigma²$.  
+$\sum_{n=1}^\infty \frac{\text{Var}X_n}{n²}=\sum_{n=1}^\infty \frac{\sigma²}{n²}=\sigma² \cdot \frac{\pi²}{6}<\infty$. Bed. erfüllt.
+
+Satz: $\frac{S_n-n\mu}{n}\rightarrow^\text{f.s.}0$. $\frac{S_n}{n}\rightarrow^\text{f.s.}\mu$
+
+### Satz 21.2. (Kolmogorow-Ungleichung)
+Seien $X_1,\dots,X_n$ unabhängige Zufallsvariablen mit $\mathbb EX_i = 0~\forall i$, $\mathbb E[X_i²]<\infty~\forall i$. Sei $S_k=X_1+\dots+X_k$. Dann gilt: $\forall a >0$: $\mathbb P[\max\{|S_1|,|S_2|,...,|S_n|\}\geq a]\leq\frac{\text{Var}S_n}{a²}$.
