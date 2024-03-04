@@ -143,7 +143,7 @@ Seien $A_1,A_2,\dots$ Ereignisse.
 - $\liminf A_n =^\text{def}\{\omega\in\Omega:\omega\in A_i \text{ für alle }i\text{ bis auf endlich viele}\} = \bigcup_{k=1}^\infty\bigcap_{i=k}^\infty A_i$  
 
 **Bem.:** 
-- $\liminf A_n \sub \limsup A_n$ 
+- $\liminf A_n \subset \limsup A_n$ 
 - $(\liminf A_n)^\complement=(\bigcup_{k=1}^\infty\bigcap_{i=k}^\infty A_i)^\complement=\bigcap_{k=1}^\infty\bigcup_{i=k}^\infty A_i^\complement=\limsup(A_n^\complement)$
 - $(\limsup A_n)^\complement=\liminf(A_n^\complement)$
 
