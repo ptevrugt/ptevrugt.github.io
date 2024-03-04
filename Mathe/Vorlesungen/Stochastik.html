@@ -45,7 +45,7 @@
 
   
   
-  <link href='tailwind.css?instanceId=b0375509-a405-42d1-b41b-ff0d4bb4d394' rel='stylesheet' type='text/css' />
+  <link href='tailwind.css?instanceId=26be2360-bca7-4874-a538-c08022a8baa0' rel='stylesheet' type='text/css' />
 
   <style>
     /* Heist error element */
@@ -1400,6 +1400,160 @@
         </li>
       
     </ul>
+  
+    <h2 id='20-fast-sichere-konvergenz' class='group mt-6 mb-4 font-bold text-gray-700 text-4xl border-b-2'>
+      
+  20. Fast sichere Konvergenz
+  
+  <a href='Mathe/Vorlesungen/Stochastik.html#20-fast-sichere-konvergenz'>
+    <span class='hover:text-red-400 group-hover:visible invisible cursor-pointer text-sm align-middle' aria-label='Copy link'><svg class='inline w-4' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'>
+        <path d='M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71'></path>
+        <path d='M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71'></path>
+      </svg></span>
+  </a>
+
+
+    </h2>
+  
+    <h3 id='defintion-nullereignisse-und-fast-sichere-ereignisse' class='group mt-6 mb-4 font-bold text-gray-700 text-3xl'>
+      
+  Defintion: Nullereignisse und fast sichere Ereignisse
+  
+  <a href='Mathe/Vorlesungen/Stochastik.html#defintion-nullereignisse-und-fast-sichere-ereignisse'>
+    <span class='hover:text-red-400 group-hover:visible invisible cursor-pointer text-sm align-middle' aria-label='Copy link'><svg class='inline w-4' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'>
+        <path d='M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71'></path>
+        <path d='M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71'></path>
+      </svg></span>
+  </a>
+
+
+    </h3>
+  
+    <p class='mb-3'>
+      Sei <span class='math inline'>\((\Omega,\mathcal F,\mathbb P)\)</span> Wahrscheinlichkeitsraum.
+    </p>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          Ereignis <span class='math inline'>\(A\in\mathcal F\)</span> heißt Nullereignis, wenn <span class='math inline'>\(\mathbb P[A]=0\)</span>.
+        </li>
+      
+        <li>
+          Ereignis <span class='math inline'>\(B\in\mathcal F\)</span> heißt sicheres Ereignis, wenn <span class='math inline'>\(\mathbb P[B]=1\)</span>.
+        </li>
+      
+    </ul>
+  
+    <p class='mb-3'>
+      <strong>Bem.:</strong>
+    </p>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          Sind <span class='math inline'>\(A_1,A_2,\dots\)</span> Nullereignisse <span class='math inline'>\(\implies A_1 \cup A_2 \cup \dots\)</span> auch Nullereignis
+        </li>
+      
+        <li>
+          Sind <span class='math inline'>\(B_1, B_2, \dots\)</span> fast sichere Ereignisse <span class='math inline'>\(\implies \bigcup_{n=1}^\infty B_n\)</span> auch fast sicher
+        </li>
+      
+    </ul>
+  
+    <h3 id='defintion-fast-sichere-konvergenz' class='group mt-6 mb-4 font-bold text-gray-700 text-3xl'>
+      
+  Defintion: Fast sichere Konvergenz
+  
+  <a href='Mathe/Vorlesungen/Stochastik.html#defintion-fast-sichere-konvergenz'>
+    <span class='hover:text-red-400 group-hover:visible invisible cursor-pointer text-sm align-middle' aria-label='Copy link'><svg class='inline w-4' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'>
+        <path d='M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71'></path>
+        <path d='M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71'></path>
+      </svg></span>
+  </a>
+
+
+    </h3>
+  
+    <p class='mb-3'>
+      Seien <span class='math inline'>\(Z_1,Z_2,\dots\)</span> und <span class='math inline'>\(Z\)</span> Zufallsvarialben auf <span class='math inline'>\((\Omega,\mathcal F, \mathbb P)\)</span>. Wir sagen, dass <span class='math inline'>\(Z_n\)</span> gegen <span class='math inline'>\(Z\)</span> fast sicher konvergiert, wenn: <span class='math inline'>\(\mathbb P[\{\omega\in\Omega:\lim_{n\rightarrow\infty}Z_n(\omega)=Z(w)\}]=1\)</span>
+    </p>
+  
+    <p class='mb-3'>
+      <strong>Bez.:</strong> <span class='math inline'>\(Z_n\rightarrow_{n\rightarrow\infty}^\text{f.s.}Z\)</span><br /><strong>Bem.:</strong> <span class='math inline'>\(\{\lim Z_n = Z\}\in Z\)</span>
+    </p>
+  
+    <h3 id='satz-201' class='group mt-6 mb-4 font-bold text-gray-700 text-3xl'>
+      
+  Satz 20.1.
+  
+  <a href='Mathe/Vorlesungen/Stochastik.html#satz-201'>
+    <span class='hover:text-red-400 group-hover:visible invisible cursor-pointer text-sm align-middle' aria-label='Copy link'><svg class='inline w-4' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'>
+        <path d='M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71'></path>
+        <path d='M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71'></path>
+      </svg></span>
+  </a>
+
+
+    </h3>
+  
+    <p class='mb-3'>
+      Aus <span class='math inline'>\(Z_n\rightarrow^\text{f.s.}Z \implies Z_n \rightarrow^P Z\)</span>.
+    </p>
+  
+    <h2 id='21-starkes-gesetz-der-großen-zahlen' class='group mt-6 mb-4 font-bold text-gray-700 text-4xl border-b-2'>
+      
+  21. Starkes Gesetz der großen Zahlen
+  
+  <a href='Mathe/Vorlesungen/Stochastik.html#21-starkes-gesetz-der-großen-zahlen'>
+    <span class='hover:text-red-400 group-hover:visible invisible cursor-pointer text-sm align-middle' aria-label='Copy link'><svg class='inline w-4' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'>
+        <path d='M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71'></path>
+        <path d='M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71'></path>
+      </svg></span>
+  </a>
+
+
+    </h2>
+  
+    <h3 id='satz-211-starkes-ggz-1-kolmogorow' class='group mt-6 mb-4 font-bold text-gray-700 text-3xl'>
+      
+  Satz 21.1. (starkes GGZ-1, Kolmogorow)
+  
+  <a href='Mathe/Vorlesungen/Stochastik.html#satz-211-starkes-ggz-1-kolmogorow'>
+    <span class='hover:text-red-400 group-hover:visible invisible cursor-pointer text-sm align-middle' aria-label='Copy link'><svg class='inline w-4' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'>
+        <path d='M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71'></path>
+        <path d='M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71'></path>
+      </svg></span>
+  </a>
+
+
+    </h3>
+  
+    <p class='mb-3'>
+      Seien <span class='math inline'>\(X_1,X_2,\dots\)</span> unabhängige Zufallsvariablen auf <span class='math inline'>\((\Omega,\mathcal F,\mathbb P)\)</span> mit: <span class='math inline'>\(\sum\frac{\text{Var}X_n}{n^2}&lt;\infty\)</span>. Sei <span class='math inline'>\(S_n = X_1+\dots+X_n\)</span>. Dann gilt: <span class='math inline'>\(\frac{S_n-\mathbb ES_n}{n}\rightarrow^\text{f.s.}0\)</span>.<br />Spezialfall: Seien <span class='math inline'>\(X_1,X_2,\dots\)</span> unabhängig, identisch verteilt, <span class='math inline'>\(\mathbb EX_i=\mu\)</span>, <span class='math inline'>\(\text{Var}X_i=\sigma²\)</span>.<br /><span class='math inline'>\(\sum_{n=1}^\infty \frac{\text{Var}X_n}{n²}=\sum_{n=1}^\infty \frac{\sigma²}{n²}=\sigma² \cdot \frac{\pi²}{6}&lt;\infty\)</span>. Bed. erfüllt.
+    </p>
+  
+    <p class='mb-3'>
+      Satz: <span class='math inline'>\(\frac{S_n-n\mu}{n}\rightarrow^\text{f.s.}0\)</span>. <span class='math inline'>\(\frac{S_n}{n}\rightarrow^\text{f.s.}\mu\)</span>
+    </p>
+  
+    <h3 id='satz-212-kolmogorow-ungleichung' class='group mt-6 mb-4 font-bold text-gray-700 text-3xl'>
+      
+  Satz 21.2. (Kolmogorow-Ungleichung)
+  
+  <a href='Mathe/Vorlesungen/Stochastik.html#satz-212-kolmogorow-ungleichung'>
+    <span class='hover:text-red-400 group-hover:visible invisible cursor-pointer text-sm align-middle' aria-label='Copy link'><svg class='inline w-4' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'>
+        <path d='M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71'></path>
+        <path d='M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71'></path>
+      </svg></span>
+  </a>
+
+
+    </h3>
+  
+    <p class='mb-3'>
+      Seien <span class='math inline'>\(X_1,\dots,X_n\)</span> unabhängige Zufallsvariablen mit <span class='math inline'>\(\mathbb EX_i = 0~\forall i\)</span>, <span class='math inline'>\(\mathbb E[X_i²]&lt;\infty~\forall i\)</span>. Sei <span class='math inline'>\(S_k=X_1+\dots+X_k\)</span>. Dann gilt: <span class='math inline'>\(\forall a &gt;0\)</span>: <span class='math inline'>\(\mathbb P[\max\{|S_1|,|S_2|,...,|S_n|\}\geq a]\leq\frac{\text{Var}S_n}{a²}\)</span>.
+    </p>
   
   <div class='flex items-center justify-center mt-2'>
   
