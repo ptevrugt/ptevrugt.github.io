@@ -45,7 +45,7 @@
 
   
   
-  <link href='tailwind.css?instanceId=26be2360-bca7-4874-a538-c08022a8baa0' rel='stylesheet' type='text/css' />
+  <link href='tailwind.css?instanceId=866b359c-4dba-46f3-ae89-38a41c6678d5' rel='stylesheet' type='text/css' />
 
   <style>
     /* Heist error element */
@@ -1553,6 +1553,96 @@
   
     <p class='mb-3'>
       Seien <span class='math inline'>\(X_1,\dots,X_n\)</span> unabhängige Zufallsvariablen mit <span class='math inline'>\(\mathbb EX_i = 0~\forall i\)</span>, <span class='math inline'>\(\mathbb E[X_i²]&lt;\infty~\forall i\)</span>. Sei <span class='math inline'>\(S_k=X_1+\dots+X_k\)</span>. Dann gilt: <span class='math inline'>\(\forall a &gt;0\)</span>: <span class='math inline'>\(\mathbb P[\max\{|S_1|,|S_2|,...,|S_n|\}\geq a]\leq\frac{\text{Var}S_n}{a²}\)</span>.
+    </p>
+  
+    <h3 id='satz-213-starkes-ggz-2-kolmogorow' class='group mt-6 mb-4 font-bold text-gray-700 text-3xl'>
+      
+  Satz 21.3. (starkes GGZ-2, Kolmogorow)
+  
+  <a href='Mathe/Vorlesungen/Stochastik.html#satz-213-starkes-ggz-2-kolmogorow'>
+    <span class='hover:text-red-400 group-hover:visible invisible cursor-pointer text-sm align-middle' aria-label='Copy link'><svg class='inline w-4' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'>
+        <path d='M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71'></path>
+        <path d='M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71'></path>
+      </svg></span>
+  </a>
+
+
+    </h3>
+  
+    <p class='mb-3'>
+      Seien <span class='math inline'>\(X_1,X_2,...\)</span> unabhängig identisch verteilte Zufallsvariablen mit <span class='math inline'>\(\mathbb E|X_1|&lt;\infty\)</span>. Dann gilt: <span class='math inline'>\(\frac{X_1+\dots+X_n}{n}\rightarrow_{n\rightarrow\infty}^\text{f.s.}\mathbb EX_1\)</span>.
+    </p>
+  
+    <h3 id='lemma-214' class='group mt-6 mb-4 font-bold text-gray-700 text-3xl'>
+      
+  Lemma 21.4.
+  
+  <a href='Mathe/Vorlesungen/Stochastik.html#lemma-214'>
+    <span class='hover:text-red-400 group-hover:visible invisible cursor-pointer text-sm align-middle' aria-label='Copy link'><svg class='inline w-4' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'>
+        <path d='M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71'></path>
+        <path d='M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71'></path>
+      </svg></span>
+  </a>
+
+
+    </h3>
+  
+    <p class='mb-3'>
+      Sei <span class='math inline'>\(Z\geq0\)</span> Zufallsvariable. Dann gilt: <span class='math inline'>\(\sum_{n=1}^\infty \mathbb P[Z\geq n]\leq\mathbb EZ\leq \sum_{n=0}^\infty \mathbb P[Z\geq n]\)</span>
+    </p>
+  
+    <h3 id='lemma-215' class='group mt-6 mb-4 font-bold text-gray-700 text-3xl'>
+      
+  Lemma 21.5.
+  
+  <a href='Mathe/Vorlesungen/Stochastik.html#lemma-215'>
+    <span class='hover:text-red-400 group-hover:visible invisible cursor-pointer text-sm align-middle' aria-label='Copy link'><svg class='inline w-4' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'>
+        <path d='M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71'></path>
+        <path d='M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71'></path>
+      </svg></span>
+  </a>
+
+
+    </h3>
+  
+    <p class='mb-3'>
+      <span class='math inline'>\(\forall k\geq2 : \sum_{n=k}^\infty \frac{1}{n^2}\leq \frac{2}{k}\)</span>
+    </p>
+  
+    <h3 id='lemma-216-cesaro' class='group mt-6 mb-4 font-bold text-gray-700 text-3xl'>
+      
+  Lemma 21.6. (Cesaro)
+  
+  <a href='Mathe/Vorlesungen/Stochastik.html#lemma-216-cesaro'>
+    <span class='hover:text-red-400 group-hover:visible invisible cursor-pointer text-sm align-middle' aria-label='Copy link'><svg class='inline w-4' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'>
+        <path d='M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71'></path>
+        <path d='M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71'></path>
+      </svg></span>
+  </a>
+
+
+    </h3>
+  
+    <p class='mb-3'>
+      Sei <span class='math inline'>\(x_1,x_2,\dots\)</span> Folge mit <span class='math inline'>\(x=\lim_{n\rightarrow\infty}x_n\)</span>, <span class='math inline'>\(x\)</span> endlich. Dann gilt: <span class='math inline'>\(\frac{x_1+\dots+x_n}{n}\rightarrow_{n\rightarrow\infty}x\)</span>.
+    </p>
+  
+    <h3 id='satz-217' class='group mt-6 mb-4 font-bold text-gray-700 text-3xl'>
+      
+  Satz 21.7.
+  
+  <a href='Mathe/Vorlesungen/Stochastik.html#satz-217'>
+    <span class='hover:text-red-400 group-hover:visible invisible cursor-pointer text-sm align-middle' aria-label='Copy link'><svg class='inline w-4' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'>
+        <path d='M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71'></path>
+        <path d='M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71'></path>
+      </svg></span>
+  </a>
+
+
+    </h3>
+  
+    <p class='mb-3'>
+      Seien <span class='math inline'>\(X_1, X_2, \dots\)</span> unabhänige identisch verteilte Zufallsvariablen mit <span class='math inline'>\(\mathbb E|X_1|=\infty\)</span>. Sei <span class='math inline'>\(A=\{\omega\in\Omega:\frac{X_1(\omega)+\dots+X_n(\omega)}{n} \text{ konvergiert (gegen einen endlichen Grenzwert)}\}\)</span>. Dann gilt <span class='math inline'>\(\mathbb P[A]=0\)</span>.
     </p>
   
   <div class='flex items-center justify-center mt-2'>
