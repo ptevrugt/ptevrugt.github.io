@@ -181,3 +181,18 @@ Satz: $\frac{S_n-n\mu}{n}\rightarrow^\text{f.s.}0$. $\frac{S_n}{n}\rightarrow^\t
 
 ### Satz 21.2. (Kolmogorow-Ungleichung)
 Seien $X_1,\dots,X_n$ unabhängige Zufallsvariablen mit $\mathbb EX_i = 0~\forall i$, $\mathbb E[X_i²]<\infty~\forall i$. Sei $S_k=X_1+\dots+X_k$. Dann gilt: $\forall a >0$: $\mathbb P[\max\{|S_1|,|S_2|,...,|S_n|\}\geq a]\leq\frac{\text{Var}S_n}{a²}$.
+
+### Satz 21.3. (starkes GGZ-2, Kolmogorow)
+Seien $X_1,X_2,...$ unabhängig identisch verteilte Zufallsvariablen mit $\mathbb E|X_1|<\infty$. Dann gilt: $\frac{X_1+\dots+X_n}{n}\rightarrow_{n\rightarrow\infty}^\text{f.s.}\mathbb EX_1$.
+
+### Lemma 21.4.
+Sei $Z\geq0$ Zufallsvariable. Dann gilt: $\sum_{n=1}^\infty \mathbb P[Z\geq n]\leq\mathbb EZ\leq \sum_{n=0}^\infty \mathbb P[Z\geq n]$
+
+### Lemma 21.5.
+$\forall k\geq2 : \sum_{n=k}^\infty \frac{1}{n^2}\leq \frac{2}{k}$
+
+### Lemma 21.6. (Cesaro)
+Sei $x_1,x_2,\dots$ Folge mit $x=\lim_{n\rightarrow\infty}x_n$, $x$ endlich. Dann gilt: $\frac{x_1+\dots+x_n}{n}\rightarrow_{n\rightarrow\infty}x$.
+
+### Satz 21.7.
+Seien $X_1, X_2, \dots$ unabhänige identisch verteilte Zufallsvariablen mit $\mathbb E|X_1|=\infty$. Sei $A=\{\omega\in\Omega:\frac{X_1(\omega)+\dots+X_n(\omega)}{n} \text{ konvergiert (gegen einen endlichen Grenzwert)}\}$. Dann gilt $\mathbb P[A]=0$.
